@@ -3,7 +3,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import Navbar from '@/components/Navbar';
+import Navbar from '../components/Navbar';
 
 const fadeInUp = {
   initial: { y: 60, opacity: 0 },

@@ -19,7 +19,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-screen">
         <Image
-          src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070"
+          src="/images/hero.jpg"
           alt="Hero"
           fill
           className="object-cover"
@@ -56,7 +56,7 @@ export default function Home() {
             {/* Women */}
             <Link href="/category/women" className="group relative h-[600px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=2070"
+                src="/images/women.jpg"
                 alt="Women's Collection"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -73,7 +73,7 @@ export default function Home() {
             {/* Men */}
             <Link href="/category/men" className="group relative h-[600px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1488161628813-04466f872be2?q=80&w=1964"
+                src="/images/men.jpg"
                 alt="Men's Collection"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -90,7 +90,7 @@ export default function Home() {
             {/* Kids */}
             <Link href="/category/kids" className="group relative h-[600px] overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1471286174890-9c112ffca5b4?q=80&w=2069"
+                src="/images/kids.jpg"
                 alt="Kids' Collection"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -122,52 +122,7 @@ export default function Home() {
 
         <div className="max-w-[2000px] mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Product Cards */}
-            {[
-              {
-                name: "Oversized Cotton Shirt",
-                price: "$89.99",
-                image: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2005"
-              },
-              {
-                name: "Classic Denim Jacket",
-                price: "$129.99",
-                image: "https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?q=80&w=2080"
-              },
-              {
-                name: "Wool Blend Coat",
-                price: "$299.99",
-                image: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?q=80&w=1972"
-              },
-              {
-                name: "Leather Crossbody Bag",
-                price: "$159.99",
-                image: "https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=1974"
-              }
-            ].map((product, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <Link href="/product/1" className="group block">
-                  <div className="relative h-[400px] overflow-hidden bg-gray-100">
-                    <Image
-                      src={product.image}
-                      alt={product.name}
-                      fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="mt-4 space-y-2">
-                    <h3 className="font-light text-lg">{product.name}</h3>
-                    <p className="text-lg">{product.price}</p>
-                  </div>
-                </Link>
-              </motion.div>
-            ))}
+            {/* Add product cards here */}
           </div>
         </div>
       </section>
